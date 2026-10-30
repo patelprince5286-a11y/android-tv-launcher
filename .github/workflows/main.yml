@@ -1,6 +1,4 @@
-
-
-    name: Build Android TV Launcher APK
+name: Build Android TV Launcher APK
 
 on:
   push:
