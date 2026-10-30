@@ -1,36 +1,108 @@
-name: Build Android TV Launcher APK
+Act as a professional Android TV launcher developer, Android UI designer, and Kotlin developer.
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+PROJECT NAME: Premium Smart TV Launcher
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+REFERENCE IMAGE:
+Use my uploaded screenshot as the exact visual design reference. Recreate the same layout, proportions, colors, spacing, cards, icons, dock, and overall appearance as closely as possible.
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+TARGET DEVICE:
 
-      - name: set up JDK 17
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin'
-          java-version: '17'
+- Android TV 9
+- Android API 28
+- Android TV remote compatibility
+- Landscape 16:9 screen
+- 1920x1080 optimized interface
 
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v3
+DESIGN REQUIREMENTS:
 
-      - name: Build Debug APK
-        run: |
-          chmod +x gradlew
-          ./gradlew assembleDebug
+1. TOP INFORMATION BAR
 
-      - name: Upload APK Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: TV-Launcher-APK
-          path: app/build/outputs/apk/debug/app-debug.apk
+- Large digital clock on the left.
+- Personalized greeting with user name.
+- Current date and day.
+- Wi-Fi status.
+- Settings shortcut.
+- User's Gmail profile picture and Gmail ID.
 
+2. FEATURED APPLICATION CARDS
+   Create four large horizontal cards:
+
+- YouTube
+- Netflix
+- Claude
+- Spotify
+
+Use attractive gradients, rounded corners, original app icons, and premium backgrounds.
+
+3. FOR YOU SECTION
+   Create an organized application grid with:
+
+- YouTube
+- ChatGPT
+- GitHub
+- Disney+ Hotstar
+- Browser
+- Gallery
+- Media Player
+- Miracast
+- Other installed applications.
+
+4. BOTTOM APP DOCK
+   Create a floating rounded dock containing:
+
+- YouTube
+- Netflix
+- Spotify
+- Gmail
+- Chrome
+- Disney+ Hotstar
+- X
+- Settings
+- Add Application button.
+- Weather information.
+
+5. VISUAL DESIGN
+
+- Premium dark theme.
+- Black and navy background.
+- Glassmorphism effects.
+- Rounded application cards.
+- Smooth animations.
+- Subtle glowing effects.
+- High-quality application icons.
+- Modern smart TV interface.
+
+6. FUNCTIONAL REQUIREMENTS
+
+- Automatically detect installed applications.
+- Launch applications when selected.
+- Support Android TV remote D-pad navigation.
+- Support OK, Back and Home buttons appropriately.
+- Allow users to customize the dock.
+- Display actual date and time.
+- Display installed app icons.
+- Make Settings functional.
+- Save launcher preferences.
+
+7. APK DEVELOPMENT
+
+- Use Kotlin and Android Studio compatible project structure.
+- Set minimum SDK to Android 28.
+- Implement a proper Android HOME launcher activity.
+- Include all required XML layouts, Kotlin files, resources and manifest.
+- Ensure compatibility with Android TV 9.
+- Avoid unnecessary permissions.
+- Do not use fake buttons or nonfunctional UI elements.
+
+FINAL OUTPUT:
+
+1. Complete Android Studio project.
+2. All source code.
+3. AndroidManifest.xml.
+4. Required resources and icons.
+5. Gradle configuration.
+6. Instructions to build the APK.
+7. A release APK ready to install on Android TV 9.
+
+IMPORTANT:
+The final launcher must visually match my uploaded reference screenshot. Do not create a generic Android TV launcher or change the original layout.
