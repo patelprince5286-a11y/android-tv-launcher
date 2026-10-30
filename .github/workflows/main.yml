@@ -2,39 +2,29 @@ Act as a professional Android TV launcher developer, Android UI designer, and Ko
 PROJECT NAME: Premium Smart TV Launcher
 REFERENCE IMAGE:
 Use my uploaded screenshot as the exact visual design reference. Recreate the same layout, proportions, colors, spacing, cards, icons, dock, and overall appearance as closely as possible.
-
 TARGET DEVICE:
-
 - Android TV 9
 - Android API 28
 - Android TV remote compatibility
 - Landscape 16:9 screen
 - 1920x1080 optimized interface
-
 DESIGN REQUIREMENTS:
-
 1. TOP INFORMATION BAR
-
 - Large digital clock on the left.
 - Personalized greeting with user name.
 - Current date and day.
 - Wi-Fi status.
 - Settings shortcut.
 - User's Gmail profile picture and Gmail ID.
-
 2. FEATURED APPLICATION CARDS
-   Create four large horizontal cards:
-
+   Create four large horizontal cards
 - YouTube
 - Netflix
 - Claude
 - Spotify
-
 Use attractive gradients, rounded corners, original app icons, and premium backgrounds.
-
 3. FOR YOU SECTION
    Create an organized application grid with:
-
 - YouTube
 - ChatGPT
 - GitHub
@@ -44,10 +34,8 @@ Use attractive gradients, rounded corners, original app icons, and premium backg
 - Media Player
 - Miracast
 - Other installed applications.
-
 4. BOTTOM APP DOCK
    Create a floating rounded dock containing:
-
 - YouTube
 - Netflix
 - Spotify
@@ -58,9 +46,7 @@ Use attractive gradients, rounded corners, original app icons, and premium backg
 - Settings
 - Add Application button.
 - Weather information.
-
 5. VISUAL DESIGN
-
 - Premium dark theme.
 - Black and navy background.
 - Glassmorphism effects.
@@ -69,9 +55,7 @@ Use attractive gradients, rounded corners, original app icons, and premium backg
 - Subtle glowing effects.
 - High-quality application icons.
 - Modern smart TV interface.
-
 6. FUNCTIONAL REQUIREMENTS
-
 - Automatically detect installed applications.
 - Launch applications when selected.
 - Support Android TV remote D-pad navigation.
@@ -81,9 +65,7 @@ Use attractive gradients, rounded corners, original app icons, and premium backg
 - Display installed app icons.
 - Make Settings functional.
 - Save launcher preferences.
-
 7. APK DEVELOPMENT
-
 - Use Kotlin and Android Studio compatible project structure.
 - Set minimum SDK to Android 28.
 - Implement a proper Android HOME launcher activity.
@@ -91,9 +73,7 @@ Use attractive gradients, rounded corners, original app icons, and premium backg
 - Ensure compatibility with Android TV 9.
 - Avoid unnecessary permissions.
 - Do not use fake buttons or nonfunctional UI elements.
-
 FINAL OUTPUT:
-
 1. Complete Android Studio project.
 2. All source code.
 3. AndroidManifest.xml.
@@ -101,6 +81,5 @@ FINAL OUTPUT:
 5. Gradle configuration.
 6. Instructions to build the APK.
 7. A release APK ready to install on Android TV 9.
-
 IMPORTANT:
 The final launcher must visually match my uploaded reference screenshot. Do not create a generic Android TV launcher or change the original layout.
